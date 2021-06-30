@@ -1,0 +1,165 @@
+#score { text-align: center;
+position:relative; }
+
+#game {
+  width: 750px;
+  height: 380px;
+  border: 2px solid black;
+  margin: 50px auto;
+  padding-top: auto;
+  background-image: url("assets/bgm.gif");
+  background-size:contain;
+}
+
+#fin {
+  height: 130px;
+  width: 90px;
+  top: 240px;
+  position: relative;
+  background-image: url("assets/finn.gif");
+  background-size: cover;
+}
+
+#objects {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  top: 175px;
+  left: 550px;
+  background-image: url("assets/corona.gif");
+  background-size: cover;
+  animation: objects 1.75s infinite;
+}
+
+@keyframes objects {
+  0%{left: 550px;}
+  100%{left: -50px;}
+}
+
+.jump-animation {
+  animation: jump 0.5s;
+}
+
+@keyframes jump {
+  0%{top: 225px;}
+  50%{top: 75px;}
+  75%{top: 75px;}
+  100%{top: 225px;}
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+nav{
+  position: fixed;
+  background:space;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 12;
+  text-align: center;
+}
+
+.menu .logo a{
+  text-decoration:none;
+  color:white;
+  font-size: 50px;
+  font-weight: 600;
+  position: relative;
+  text-align: center;
+}
+
+ .img{
+  background: url('assets/bgmhome.png')no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.img2{
+  background: url('assets/blue.png')no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-size:contain;
+  background-position: center;
+  position: relative;
+}
+.img::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.center{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.pad{
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.pad .btns button{
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 10px;
+  border: 2px solid skyblue;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+
+.center .title{
+  color: #fff;
+  font-size: 55px;
+  font-weight: 600;
+}
+.center .sub_title{
+  color: #fff;
+  font-size: 52px;
+  font-weight: 600;
+}
+.center .btns{
+  margin-top: 20px;
+}
+.center .btns button{
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 10px;
+  border: 2px solid white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
