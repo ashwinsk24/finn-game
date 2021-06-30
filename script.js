@@ -14,6 +14,12 @@ document.addEventListener('keypress', (event) => {
   }
 })
 
+document.addEventListener('click', (event) => {
+  if (!fin.classList.contains('jump-animation')) {
+    jump();
+  }
+})
+
 setInterval(() => {
   const finTop = parseInt(window.getComputedStyle(fin)
     .getPropertyValue('top'));
